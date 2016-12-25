@@ -9,7 +9,7 @@ import IconNB from './Icon';
 import Icon from './Icon';
 import Text from './Text';
 import _ from 'lodash';
-import ReactNativePropRegistry from 'react/lib/ReactNativePropRegistry';
+import ReactNativePropRegistry from 'react-native/Libraries/Renderer/src/renderers/native/ReactNativePropRegistry';
 
 
 export default class Button extends NativeBaseComponent {
@@ -71,6 +71,7 @@ export default class Button extends NativeBaseComponent {
                             (this.props.danger) ? this.getTheme().btnDangerBg :
                             (this.props.warning) ? this.getTheme().btnWarningBg :
                             (this.props.info) ? this.getTheme().btnInfoBg :
+                            (this.props.disabled) ? this.getTheme().btnDisabledBg :
                             this.getInitialStyle().button.backgroundColor,
             height: (this.props.large) ? 60 : (this.props.small) ? 35 : 38,
             alignSelf: (this.props.block) ? 'stretch' : 'flex-start'
@@ -98,6 +99,7 @@ export default class Button extends NativeBaseComponent {
                     ((this.props.bordered) && (this.props.danger)) ? this.getTheme().btnDangerBg :
                     ((this.props.bordered) && (this.props.warning)) ? this.getTheme().btnWarningBg :
                     ((this.props.bordered) && (this.props.info)) ? this.getTheme().btnInfoBg :
+                    ((this.props.bordered) && (this.props.disabled)) ? this.getTheme().btnDisabledBg :
                     ((this.props.bordered)) ? this.getTheme().btnPrimaryBg :
                     (this.props.color) ? this.props.color :
                     (this.props.transparent) ? this.getContextForegroundColor() :
@@ -194,7 +196,7 @@ export default class Button extends NativeBaseComponent {
                 }
             }
             else {
-                return <Text style={this.getTextStyle()}>{(Platform.OS==='ios') ? this.props.children : this.props.children.toUpperCase()}</Text>
+                return <Text style={this.getTextStyle()}>{this.props.children}</Text>
             }
 
             return newChildren;
