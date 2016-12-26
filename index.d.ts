@@ -1,3 +1,6 @@
+/**
+ * Implementation of NativeBase v0.5.13
+ */
 declare module 'native-base' {
     namespace NativeBase {
         /**
@@ -11,9 +14,7 @@ declare module 'native-base' {
         /**
          * see Widget Text.js
          */
-        interface View extends React.ViewProperties {
-            padder?: boolean
-        }
+        interface View extends React.ViewProperties { }
         /**
          * see Widget Text.js
          */
@@ -141,7 +142,6 @@ declare module 'native-base' {
             danger?: boolean,
             warning?: boolean,
             info?: boolean,
-            color?: string,
             /**
              * Applies outline button style.
              */
@@ -173,7 +173,6 @@ declare module 'native-base' {
              * Disables onPress option for button
              */
             disabled?: boolean,
-            active?: boolean,
             inputButton?: boolean,
         }
         /**
@@ -416,9 +415,7 @@ declare module 'native-base' {
         /**
          * see Widget Textarea.js
          */
-        interface Textarea extends React.TextInputProperties {
-            rowSpan: number;
-        }
+        interface Textarea extends React.TextInputProperties { }
         /**
          * see Widget Icon.js
          */

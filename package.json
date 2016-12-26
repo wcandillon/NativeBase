@@ -6,7 +6,6 @@
     "ios",
     "react",
     "native",
-    "nativebase",
     "react-native",
     "native-modules",
     "react-component",
@@ -14,7 +13,7 @@
     "packager",
     "rnpm"
   ],
-  "version": "0.5.19",
+  "version": "0.5.18",
   "private": false,
   "dependencies": {
     "blueimp-md5": "^2.5.0",

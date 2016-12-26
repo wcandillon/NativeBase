@@ -19,8 +19,7 @@ export default class TextNB extends NativeBaseComponent {
       color: this.getContextForegroundColor(),
       fontSize: this.getTheme().fontSizeBase,
       lineHeight: this.getTheme().lineHeight,
-      fontFamily: this.getTheme().fontFamily,
-      backgroundColor: this.getTheme().textBgColor
+      fontFamily: this.getTheme().fontFamily
     }
 
     var defaultProps = {

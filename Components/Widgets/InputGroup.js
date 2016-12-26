@@ -71,7 +71,7 @@ export default class InputGroup extends NativeBaseComponent {
   prepareRootProps() {
     var type = {
       paddingLeft:  (this.props.borderType === 'rounded' && !this.props.children.type == Icon) ? 15 :
-      (this.props.children.type == Icon ) ? this.getTheme().inputPaddingLeftIcon : this.getTheme().inputPaddingLeft
+      (this.props.children.type == Icon ) ? this.getTheme().inputPaddingLeftIcon : 5
     }
 
     var defaultStyle = (this.props.borderType === 'regular') ? this.getInitialStyle().bordered : (this.props.borderType === 'rounded') ? this.getInitialStyle().rounded : this.getInitialStyle().underline;

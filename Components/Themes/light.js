@@ -105,14 +105,12 @@ export default {
     // Footer
     footerHeight: 55,
     footerDefaultBg: (Platform.OS === 'ios' ) ? '#F8F8F8' : '#4179F7',
-    footerBtnMargin: 1,
 
 
     //FooterTab
     tabBarTextColor: (Platform.OS === 'ios' ) ? '#6b6b6b' : '#b3c7f9',
     tabBarActiveTextColor: (Platform.OS === 'ios' ) ? '#007aff' : '#fff',
     tabActiveBgColor: (Platform.OS=='ios') ? '#cde1f9' : undefined,
-    tabBarBorderRadius: (Platform.OS == 'ios') ? 7 : 0,
 
     //Tab
     tabDefaultBg: (Platform.OS === 'ios' ) ? '#F8F8F8' : '#4179F7',
@@ -209,7 +207,6 @@ export default {
     // Text
     textColor: '#000',
     inverseTextColor: '#fff',
-    textBgColor: 'transparent',
 
 
     // Title
