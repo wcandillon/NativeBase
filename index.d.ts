@@ -416,7 +416,8 @@ declare module 'native-base' {
              * Places the label on top of the input element which appears like a stack.
              * This can also be used along with placeholder.
              */
-            stackedLabel?: boolean
+            stackedLabel?: boolean,
+            disabled?: boolean
         }
         /**
          * see Widget Textarea.js
