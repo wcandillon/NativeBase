@@ -8,8 +8,7 @@ import computeProps from '../../Utils/computeProps';
 export default class Input extends NativeBaseComponent {
 
     propTypes: {
-        style : React.PropTypes.object,
-        disabled: React.PropTypes.bool
+        style : React.PropTypes.object
     }
 
     getInitialStyle() {
