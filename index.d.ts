@@ -424,6 +424,7 @@ declare module 'native-base' {
          */
         interface Textarea extends React.TextInputProperties {
             rowSpan: number;
+            disabled?: boolean;
         }
         /**
          * see Widget Icon.js
