@@ -10,7 +10,7 @@ export default class Textarea extends NativeBaseComponent {
 
   propTypes: {
         style : React.PropTypes.object
-    }
+  }
 
   getInitialStyle() {
     return {
@@ -57,7 +57,7 @@ export default class Textarea extends NativeBaseComponent {
 
     return (
       <View style={{ flex: 1 }}>
-      <TextInput ref={c => this._root = c} {...this.prepareRootProps()} multiline={true} placeholderTextColor={ this.getTheme().inputColorPlaceholder} underlineColorAndroid='rgba(0,0,0,0)' />
+      <TextInput ref={c => this._root = c} {...this.prepareRootProps()} multiline={true} editable={!this.props.disabled === true} placeholderTextColor={ this.getTheme().inputColorPlaceholder} underlineColorAndroid='rgba(0,0,0,0)' />
       </View>
       );
   }
