@@ -542,7 +542,7 @@ declare module 'native-base' {
      * Usage of Container's Header component is very similar to your HTML <head>.
      * The Content component of Container is nothing but the body section of your screen.
      */
-    export class Container extends React.Component<NativeBase.Container, any> { }
+    // export class Container extends React.Component<NativeBase.Container, any> { }
     /**
      * NativeBase.Header
      *
@@ -556,7 +556,7 @@ declare module 'native-base' {
      * User can add custom styles while defining <Header> within their app.
      * Replacing Component: React Native <View>
      */
-    export class Header extends React.Component<NativeBase.Header, any> { }
+    // export class Header extends React.Component<NativeBase.Header, any> { }
     /**
      * NativeBase.Content
      *
