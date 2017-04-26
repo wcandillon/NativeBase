@@ -1,7 +1,7 @@
-import {Component, ReactElement, Props, Ref} from "react";
-import * as React from "react-native";
-
 declare module 'native-base' {
+    import {Component, ReactElement, Props, Ref} from "react";
+    import * as React from "react-native";
+
     namespace NativeBase {
         /**
          * see Widget Text.js
